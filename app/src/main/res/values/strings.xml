@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">weather_app</string>
+    <string name="weather_text">Погода не грузится</string>
+    <string name="choose_city_btn">Выбрать город</string>
+    <string name="sign_service_btn">Обновлять в фоне</string>
+    <string name="unsign_service_btn">Не обновлять в фоне</string>
+    <string name="vice_city_btn">VICE_CITY</string>
+    <string name="raccoon_city_btn">RACCOON_CITY</string>
+    <string name="springfield_btn">SPRINGFIELD_CITY</string>
+    <string name="silent_hill_btn">SILENT_HILL_CITY</string>
+    <string name="south_park_btn">SOUTH_PARK_CITY</string>
+</resources>
