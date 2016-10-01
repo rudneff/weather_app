@@ -22,12 +22,12 @@
         android:layout_height="wrap_content"
         android:text="@string/choose_city_btn" />
     <Button
-        android:id="@+id/sign_service_btn"
+        android:id="@+id/background_update_on_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sign_service_btn"/>
     <Button
-        android:id="@+id/unsign_service_btn"
+        android:id="@+id/background_update_off_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/unsign_service_btn"/>

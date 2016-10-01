@@ -3,27 +3,20 @@ package ru.tp.rudi.weather_app;
 import android.app.IntentService;
 import android.content.Intent;
 import android.content.Context;
+import android.os.IBinder;
+import android.util.Log;
 
-/**
- * An {@link IntentService} subclass for handling asynchronous task requests in
- * a service on a separate handler thread.
- * <p>
- * TODO: Customize class - update intent actions, extra parameters and static
- * helper methods.
- */
 public class WeatherIntentService extends IntentService {
-    // TODO: Rename actions, choose action names that describe tasks that this
-    // IntentService can perform, e.g. ACTION_FETCH_NEW_ITEMS
-    private static final String ACTION_FOO = "ru.tp.rudi.weather_app.action.FOO";
-    private static final String ACTION_BAZ = "ru.tp.rudi.weather_app.action.BAZ";
+    public static final String WEATHER_ERROR_ACTION = "ru.tp.rudi.weather_app.WEATHER_ERROR_ACTION";
+    public static final String WEATHER_CHANGE_ACTION = "ru.tp.rudi.weather_app.WEATHER_CHANGE_ACTION";
 
-    // TODO: Rename parameters
-    private static final String EXTRA_PARAM1 = "ru.tp.rudi.weather_app.extra.PARAM1";
-    private static final String EXTRA_PARAM2 = "ru.tp.rudi.weather_app.extra.PARAM2";
+    public static final String WEATHER_LOAD_ACTION = "ru.tp.rudi.weather_app.WEATHER_LOAD_ACTION";
 
     public WeatherIntentService() {
         super("WeatherIntentService");
     }
+
+
 
     /**
      * Starts this service to perform action Foo with the given parameters. If
@@ -57,18 +50,8 @@ public class WeatherIntentService extends IntentService {
 
     @Override
     protected void onHandleIntent(Intent intent) {
-        if (intent != null) {
-            final String action = intent.getAction();
-            if (ACTION_FOO.equals(action)) {
-                final String param1 = intent.getStringExtra(EXTRA_PARAM1);
-                final String param2 = intent.getStringExtra(EXTRA_PARAM2);
-                handleActionFoo(param1, param2);
-            } else if (ACTION_BAZ.equals(action)) {
-                final String param1 = intent.getStringExtra(EXTRA_PARAM1);
-                final String param2 = intent.getStringExtra(EXTRA_PARAM2);
-                handleActionBaz(param1, param2);
-            }
-        }
+        Log.d("!@!", "onHandleIntent");
+
     }
 
     /**
